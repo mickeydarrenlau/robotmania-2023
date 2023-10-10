@@ -47,13 +47,13 @@ second_section.run()
 
 time.sleep(2)
 
-motor2.throttle = 0.8
+motor2.throttle = 0.8 # section 3
 time.sleep(0.8)
 motor2.throttle = 0.0
 
 time.sleep(2)
 
-motor1.throttle = 0.8
+motor1.throttle = 0.8 
 motor2.throttle = 0.8
 
 time.sleep(2)
