@@ -22,8 +22,8 @@ class first:
 
             time.sleep(2)
 
-            motor1.throttle = slow_speed # move forward
-            motor2.throttle = slow_speed
+            motor1.throttle = speed # move forward
+            motor2.throttle = speed
 
             while sonar.distance > 15:
                 time.sleep(0.1)
