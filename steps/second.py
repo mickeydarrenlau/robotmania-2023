@@ -26,7 +26,7 @@ class second:
 
             time.sleep(2)
 
-            while sonar.distance > 15:
+            while sonar.distance > 11.5:
                 time.sleep(0.1)
                 pass
 
