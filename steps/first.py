@@ -20,7 +20,7 @@ class first:
             motor1.throttle = 0.0 # stop
             motor2.throttle = 0.0 
 
-            time.sleep(2)
+            
 
             motor1.throttle = speed # move forward
             motor2.throttle = speed
