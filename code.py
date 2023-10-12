@@ -4,6 +4,7 @@ import default
 from steps import first as first_sequence
 from steps import second as second_sequence
 from steps import third as third_sequence
+from steps import fourth as fourth_sequence
 
 import board
 from digitalio import DigitalInOut, Pull
@@ -40,9 +41,12 @@ wait_time = default.wait_time
 first_section = first_sequence.first(motor1, motor2, sonar, speed, turn_speed, slow_speed, wait_time)
 second_section = second_sequence.second(motor1, motor2, sonar, speed, turn_speed, slow_speed, wait_time)
 third_section = third_sequence.third(motor1, motor2, sonar, speed, turn_speed, slow_speed, wait_time)
+fourth_section = fourth_sequence.fourth(motor1, motor2, sonar, speed, turn_speed, slow_speed, wait_time)
 
 first_section.run()
 
 second_section.run()
 
 third_section.run()
+
+fourth_section.run()
