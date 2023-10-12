@@ -3,7 +3,7 @@ import default
 
 from steps import first as first_sequence
 from steps import second as second_sequence
-
+from steps import third as third_sequence
 
 import board
 from digitalio import DigitalInOut, Pull
@@ -39,59 +39,10 @@ wait_time = default.wait_time
 
 first_section = first_sequence.first(motor1, motor2, sonar, speed, turn_speed, slow_speed, wait_time)
 second_section = second_sequence.second(motor1, motor2, sonar, speed, turn_speed, slow_speed, wait_time)
+third_section = third_sequence.third(motor1, motor2, sonar, speed, turn_speed, slow_speed, wait_time)
 
 first_section.run()
 
-
-
-
 second_section.run()
 
-
-
-motor2.throttle = 0.8 # section 3
-time.sleep(0.8)
-motor2.throttle = 0.0
-
-
-
-motor1.throttle = 0.8 
-motor2.throttle = 0.8
-
-
-
-while sonar.distance > 14:
-    time.sleep(0.1)
-    pass
-
-
-
-motor1.throttle = 0.0
-motor2.throttle = 0.0
-
-
-
-motor1.throttle = 0.8
-time.sleep(0.8)
-motor1.throttle = 0.0
-
-
-
-motor1.throttle = 0.8
-motor2.throttle = 0.8
-
-
-
-while sonar.distance > 14:
-    time.sleep(0.1)
-    pass
-
-motor1.throttle = 0.0
-motor2.throttle = 0.0
-
-
-
-motor1.throttle = 0.8
-time.sleep(0.8)
-motor1.throttle = 0.0
-
+third_section.run()
