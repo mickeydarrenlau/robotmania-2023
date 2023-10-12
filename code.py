@@ -35,9 +35,10 @@ motor2 = motor.DCMotor(M2A, M2B)
 speed = default.speed
 turn_speed = default.turn_speed
 slow_speed = default.slow_speed
+wait_time = default.wait_time
 
-first_section = first_sequence.first(motor1, motor2, sonar, speed, turn_speed, slow_speed)
-second_section = second_sequence.second(motor1, motor2, sonar, speed, turn_speed, slow_speed)
+first_section = first_sequence.first(motor1, motor2, sonar, speed, turn_speed, slow_speed, wait_time)
+second_section = second_sequence.second(motor1, motor2, sonar, speed, turn_speed, slow_speed, wait_time)
 
 first_section.run()
 
