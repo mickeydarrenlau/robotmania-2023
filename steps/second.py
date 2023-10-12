@@ -25,8 +25,8 @@ class second:
 
             time.sleep(wait_time);
 
-            motor1.throttle = slow_speed # move forward
-            motor2.throttle = slow_speed
+            motor1.throttle = speed # move forward
+            motor2.throttle = speed
 
             
 
