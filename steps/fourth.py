@@ -24,7 +24,7 @@ class fourth:
 
 
 
-            while sonar.distance > 9:
+            while sonar.distance > 11:
                 time.sleep(0.1)
                 pass
 
