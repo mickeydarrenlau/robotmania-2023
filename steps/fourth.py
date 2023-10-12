@@ -32,4 +32,10 @@ class fourth:
             motor2.throttle = 0.0
 
             time.sleep(wait_time)
+
+            motor2.throttle = turn_speed
+            time.sleep(0.8)
+            motor2.throttle = 0.0
+
+            time.sleep(wait_time)
             
