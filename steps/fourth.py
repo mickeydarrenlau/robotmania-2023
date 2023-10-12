@@ -19,8 +19,8 @@ class fourth:
             slow_speed = self.slow_speed
             wait_time = self.wait_time
             
-            motor1.throttle = speed
-            motor2.throttle = speed
+            motor1.throttle = slow_speed
+            motor2.throttle = slow_speed
 
 
 
