@@ -65,3 +65,4 @@ class third:
             motor1.throttle = turn_speed
             time.sleep(0.8)
             motor1.throttle = 0.0
+
