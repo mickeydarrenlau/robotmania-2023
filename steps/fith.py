@@ -1,6 +1,6 @@
 import time
 
-class fourth:
+class fith:
         def __init__(self, motor1, motor2, sonar, speed, turn_speed, slow_speed, wait_time):
             self.motor1 = motor1
             self.motor2 = motor2
@@ -24,7 +24,7 @@ class fourth:
 
 
 
-            while sonar.distance > 11:
+            while sonar.distance > 5:
                 time.sleep(0.1)
                 pass
 
@@ -33,46 +33,8 @@ class fourth:
 
             time.sleep(wait_time)
 
-            motor2.throttle = turn_speed
-            time.sleep(0.6)
-            motor2.throttle = 0.0
-
-            time.sleep(wait_time)
-
-            motor1.throttle = slow_speed
-            motor2.throttle = slow_speed
-
-
-
-            while sonar.distance > 10:
-                time.sleep(0.1)
-                pass
-
-            motor1.throttle = 0.0
-            motor2.throttle = 0.0
-            
-            motor2.throttle = turn_speed
+            motor1.throttle = turn_speed
             time.sleep(0.8)
-            motor2.throttle = 0.0
-
-            time.sleep(wait_time)
-
-            motor1.throttle = slow_speed
-            motor2.throttle = slow_speed
-
-
-
-            while sonar.distance > 15:
-                time.sleep(0.1)
-                pass
-
             motor1.throttle = 0.0
-            motor2.throttle = 0.0
-
-            motor2.throttle = turn_speed
-            time.sleep(0.8)
-            motor2.throttle = 0.0
             
             time.sleep(wait_time)
-
-            
