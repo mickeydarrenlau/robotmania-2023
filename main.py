@@ -1,5 +1,6 @@
 import time
 import default
+import time, board, simpleio
 
 from steps import first as first_sequence
 from steps import second as second_sequence
@@ -44,6 +45,22 @@ second_section = second_sequence.second(motor1, motor2, sonar, speed, turn_speed
 third_section = third_sequence.third(motor1, motor2, sonar, speed, turn_speed, slow_speed, wait_time)
 fourth_section = fourth_sequence.fourth(motor1, motor2, sonar, speed, turn_speed, slow_speed, wait_time)
 fith_section = fith_sequence.fith(motor1, motor2, sonar, speed, turn_speed, slow_speed, wait_time)
+
+
+for f in (262, 294, 330, 349, 392, 440, 494, 523):
+          simpleio.tone(board.GP22, f, 0.25)
+
+
+import neopixel
+leds = neopixel.NeoPixel(board.NEOPIXEL, 18, brightness=0.1)
+
+leds.fill((255,0,0))
+time.sleep(1)
+leds.fill((0,255,0))
+time.sleep(1)
+leds.fill((0,0,255))
+
+
 
 first_section.run()
 
