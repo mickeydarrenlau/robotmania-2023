@@ -44,7 +44,7 @@ class fith:
 
 
 
-            while sonar.distance > 3:
+            while sonar.distance > 4:
                 time.sleep(0.1)
                 pass
 
